@@ -1,0 +1,129 @@
+{% extends 'base.html' %}
+{% block title %}recipient{% endblock title %}
+{% block body %} 
+<form action="/recipient" method="post" style="background-color: aqua;margin-right: 20%;margin-left: 20%;">
+    {% csrf_token %} 
+    <h3>RECIPIENT'S REGISTRATION FORM</h3>     
+    <table align="center" cellpadding = "10">
+    <tr>
+    <td>FIRST NAME</td>
+    <td><input type="text" name="First_Name" maxlength="30"/>
+    (max 30 characters a-z and A-Z)
+    </td>
+    </tr>   
+    <!----- Last Name ---------------------------------------------------------->
+    <tr>
+    <td>LAST NAME</td>
+    <td><input type="text" name="Last_Name" maxlength="30"/>
+    (max 30 characters a-z and A-Z)
+    </td>
+    </tr>    
+    <!----- Date Of Birth -------------------------------------------------------->
+    <tr>
+    <td>AGE</td>
+    <td>
+    <input type="text"name="age"> 
+    </td>
+    </tr> -->    
+    <!----- Email Id ---------------------------------------------------------->
+    <tr>
+    <td>EMAIL ID</td>
+    <td><input type="text" name="Email_Id" maxlength="100" /></td>
+    </tr>    
+    <!----- Mobile Number ---------------------------------------------------------->
+    <tr>
+    <td>MOBILE NUMBER</td>
+    <td>
+    <input type="text" name="Mobile_Number" maxlength="10" />
+    (10 digit number)
+    </td>
+    </tr>     
+    <tr>
+    <td>GENDER</td>
+    <td>
+        <input type="radio" name="gender" value="Male" />Male <br>
+        <input type="radio" name="gender" value="Female" />Female <br>
+    </td>
+    </tr>         
+    <tr>
+        <td>Blood Group <br /><br /><br /></td>     
+        <td>  
+        <input type="checkbox" name="Blood Group" value="O pos" />O pos 
+        <input type="checkbox" name="Blood Group" value="O neg" />O neg <br>
+        <input type="checkbox" name="Blood Group" value="A pos" />A pos 
+        <input type="checkbox" name="Blood Group" value="A neg" />A neg <br>
+        <input type="checkbox" name="Blood Group" value="B pos" />B pos 
+        <input type="checkbox" name="Blood Group" value="B neg" />B neg<br>
+        <input type="checkbox" name="Blood Group" value="AB pos"/> AB pos
+        <input type="checkbox" name="Blood Group" value="AB neg"/> AB neg
+        </td>
+        </tr>    
+    <tr>
+    <td>ADDRESS <br /><br /><br /></td>
+    <td><textarea name="Address" rows="4" cols="30"></textarea></td>
+    </tr>     
+    <tr>
+    <td>CITY</td>
+    <td><input type="text" name="City" maxlength="30" />
+    (max 30 characters a-z and A-Z)
+    </td>
+    </tr>    
+    <tr>
+    <td>PIN CODE</td>
+    <td><input type="text" name="Pin_Code" maxlength="6" />
+    (6 digit number)
+    </td>
+    </tr>    
+    <!----- State ---------------------------------------------------------->
+    <tr>
+    <td>STATE</td>
+    <td><input type="text" name="State" maxlength="30" />
+    (max 30 characters a-z and A-Z)
+    </td>
+    </tr>    
+    <!----- Country ---------------------------------------------------------->
+    <tr>
+    <td>COUNTRY</td>
+    <td><input type="text" name="Country" value="India" readonly="readonly" /></td>
+    </tr>       
+    <!----- Submit and Reset ------------------------------------------------->
+    <tr>
+    <td colspan="2" align="center">
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+    </td>
+    </tr>
+    </table> 
+    </form>
+    <style>
+        body{
+            font-family: Calibri; 
+            font-size: 18px;         
+            font-style: normal; 
+            font-weight: bold; 
+            color:SlateBlue;
+            text-align: center; 
+            text-decoration: underline
+        }
+        #table{
+        font-family: Calibri; 
+        color:white; 
+        font-size: 11px; 
+        font-style: normal;
+        font-weight: 900;
+        text-align: center;
+        background-color: SlateBlue; 
+        border-collapse: collapse; 
+        border: 2px solid navy
+        }
+        #table.inner{
+        border: 0px
+        }
+    </style>
+</form>
+
+
+
+
+
+{% endblock body %}

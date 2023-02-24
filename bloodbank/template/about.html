@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% block title %}about{% endblock title %}
+{% block body %} 
+      <section id="contact">
+      <main>
+        <section id="intro">
+          <h1>About Us</h1>
+          <p>Welcome to Blood Bank Management, your trusted partner in blood banking. Our mission is to ensure a safe and sufficient supply of blood products for patients in need, while providing the highest quality service to our donors, customers, and partners.</p>
+        </section>
+        <section id="team">
+          <h2>Our Team</h2>
+          <div class="member">
+            <img src="../static/avatar.jpg" alt="Team Member 1">
+            <h3>John Doe</h3>
+            <p>Founder and CEO</p>
+          </div>
+          <div class="member">
+            <img src="../static/avatar-2.jpg" alt="Team Member 2">
+            <h3>Jane Smith</h3>
+            <p>Director of Operations</p>
+          </div>
+          <div class="member">
+            <img src="../static/avatar-1.jpg" alt="Team Member 3">
+            <h3>Milley Lee</h3>
+            <p>Medical Director</p>
+          </div>
+        </section>
+        <section id="values">
+          <h2>Our Values</h2>
+          <ul>
+            <li>Commitment to quality and safety</li>
+            <li>Service excellence and customer focus</li>
+            <li>Respect for donors, patients, and partners</li>
+            <li>Innovation and continuous improvement</li>
+            <li>Collaboration and teamwork</li>
+          </ul>
+        </section>
+    
+      <footer>
+        <p>&copy; 2023 Blood Bank Management. All rights reserved.</p>
+      </footer>
+    </main>
+    </section>
+    </body>
+    </html>
+    {% endblock body %}
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+    
+    header {
+      background-color: pink;
+      color: #fff;
+      padding: 1rem;
+    }
+    
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    nav li {
+      display: inline-block;
+      margin-right: 1rem;
+    }
+    
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    main {
+      margin: 20rem;
+    }
+    
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    
+    p {
+      font-size: 1.2rem;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+    
+    #team .member {
+      display: inline-block ;
+      width: 30%;
+      margin-right: 3%;
+    }
+    
+  </style>
+  

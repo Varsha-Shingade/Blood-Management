@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% block title %}login{% endblock title %}
+{% block body %} 
+
+<div class="contact-us-section">
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+  
+      <button type="submit">Send</button>
+    </form>
+  </div>
+  <style>
+  .contact-us-section {
+    background-color: pink;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .contact-us-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .contact-us-section form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+  }
+  
+  .contact-us-section label {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .contact-us-section input,
+  .contact-us-section textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .contact-us-section button {
+    background-color: #d33a2c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-us-section button:hover {
+    background-color: #ff4f42;
+  }
+  </style>
+{% endblock body %}

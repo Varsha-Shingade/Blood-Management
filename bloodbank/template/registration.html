@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block title %}registration{% endblock  %}
+{% block body %}
+<div id="frm">
+    <h1>Register as a Donar</h1><br> <br>
+  <a href="/donar"><img src="../static/donar2.jpeg" alt=""></a> <br> <br>
+  <h1>Register as a recipient </h1> <br> <br>
+  <a href="/recipient"><img src="../static/recipient.jpeg"alt=""></a>
+  </div>
+  <style>
+    #frm{
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      background-color:pink;
+    }
+  img:hover{66
+    transform: scale(1.5);
+    border-radius: 100%;
+    background-color: aquamarinepink;
+    transition: 2s;
+    margin: 50px;
+  }
+  h1{
+    display: inline-block;
+  }
+  h1:hover{
+    color: red;
+    transition: 2s;
+    transform: scale(1.5);
+  }
+  
+  </style>
+{% endblock body %}

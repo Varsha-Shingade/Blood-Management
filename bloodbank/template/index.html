@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% block title %}home{% endblock %}
+{% block body %}
+
+<img src="../static/homee.webp" alt="" style="width: 90rem; height: 50rem;"><br><br>
+<h1 style="text-align: center;">SERVICES</h1>
+
+<div id="multipleimg">
+    <div id="multidiv1">
+      <img src="../static/home3.jpeg" alt="">
+      <h4>Blood Storage</h4>
+      <p>We store the safest blood of all blood groups which you can use for any kind of treatments or in an emergency.</p>
+    </div>
+    <div id="multidiv2">
+      <img src="../static/blood2.jpg" alt="">
+          <h4>Blood Donation</h4>
+          <p>Donation of blood is a selfless service that we do for mankind! We allow you to save a life by donating blood to the ones who need it.</p>
+    </div>
+    <div id="multidiv3">
+      <img src="../static/red.webp" alt="">
+            <h4>Provision Of Red Blood Cells</h4>
+            <p>Lowering the count of red blood cells could be dangerous. We also provide red blood cells for various treatments.</p>
+    </div>
+    <div id="multidiv4">
+      <img src="../static/platelets.jpg" alt="" >
+              <h4>Provision Of Platelets</h4>
+              <p>Platelets play an important role in blocking the blood flow at the times of injuries. We also provide
+                  platelets to maintain its count in your blood.</p>
+    </div>
+</div>
+<h1 style="text-align: center;">GALLERY</h1>
+<div class="roll">
+  <div class="con">
+    <img src="../static/donar2.jpeg" alt="" style="width: 100%;width: 99%;height: 250px">
+  </div>
+  <div class="con">
+    <img src="../static/blood1.jpg" alt="" style="width: 100%;width: 99%;height: 250px">
+  </div>
+</div>
+
+<style>   
+   body{
+    overflow-x: hidden;
+   } 
+
+    #multipleimg{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+
+
+
+    }
+    #multipleimg img{
+      width: 87%;
+      height: 250px;
+      margin-left: 5%;
+    }
+    /* #multipleimg > div{
+
+    } */
+  
+ 
+
+    
+    /* #multipleimg div img{
+      width: 100%;
+    }
+    #multipleimg div{
+      display: inline-block;
+      width: 24%;
+    }
+   */
+   
+    .roll{
+      display: flex;
+      flex-direction: row;
+    }
+
+    .roll > div{
+      display: inline-block;
+      width: 25%;
+    }
+
+    </style>
+    {% endblock body %}
